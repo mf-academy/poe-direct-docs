@@ -37,7 +37,7 @@ The overall design of PoE Direct is similar to most modern web applications user
 
 ### Front End Design
 
-< INSERT CONTENT HERE>
+![poe-direct-design.md](https://github.com/mf-academy/poe-direct-docs/blob/master/diagrams/ui/poe-direct-ui-main.png)
 
 
 
@@ -255,7 +255,7 @@ Mutations are PUT operations that let us mutate or create data in our database t
 
 
 
-![PoE Services Trading Website Architecture.md](https://github.com/mf-academy/poe-direct-docs/blob/master/diagrams/architecture/poe-direct-architecture-digram.png)
+![poe-direct-design.md](https://github.com/mf-academy/poe-direct-docs/blob/master/diagrams/architecture/poe-direct-architecture-digram.png)
 
 
 
