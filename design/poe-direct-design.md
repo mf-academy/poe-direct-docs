@@ -255,7 +255,7 @@ Mutations are PUT operations that let us mutate or create data in our database t
 
 
 
-![PoE Services Trading Website Architecture.md](C:\Users\Ian\Downloads\PoE Services Trading Website Architecture.md.png)
+![PoE Services Trading Website Architecture.md](https://github.com/mf-academy/poe-direct-docs/blob/master/diagrams/architecture/poe-direct-architecture-digram.png)
 
 
 
