@@ -282,23 +282,23 @@ Mutations are PUT operations that let us mutate or create data in our database t
 
 The users DB will hold a list of PoE ID's, SessionIDs, Status and Vouch/Reports for a particular user.
 
-* **UserID**
+* **ID**
   * **Type** - int64
   * **Value** - "The users POE userID from pathofexile.com"
   * **Unique** - Yes
-* **UserName**
+* **Name**
   * **Type** - str
   * **Value** - "The users name from pathofexile.com"
   * **Unique** - Yes
-* **UserStatus**
+* **Status**
   * **Type** - enum string
   * **Value** - "The users current status from a string enum of different valid status's"
   * **Unique** - False
-* **UserVouches**
+* **Vouches**
   * **Type** - Array int64
   * **Value** - "A list of vouch IDs from the vouches table for this particular user"
   * **Unique** - No
-* **UserReports**
+* **Reports**
   * **Type** - Array int64
   * **Value** - "A list of user report IDs from the reports table for this particular user"
   * **Unique** - No
@@ -340,19 +340,19 @@ A table that holds all vouches
 
 A table that holds all reports
 
-* **ReportID**
+* **ID**
   * **Type** - int64
   * **Value** - "A uniquely generated ID for each report"
   * **Unique** - Yes
-* **BuyerUserID**
+* **BuyerID**
   * **Type** - int64
   * **Value** - "The value of the buyer that this report was made by"
   * **Unique** - Yes
-* **SellerUserID**
+* **SellerID**
   * **Type** - int64
   * **Value** - "The value of the seller that this report was made for"
   * **Unique** - Yes
-* **ReportMessage**
+* **Message**
   * **Type** - string
   * **Value** - "The message that was added to this report by the reporting user"
   * **Unique** - No
@@ -365,11 +365,11 @@ A table that holds all reports
 
 A table that holds all categories
 
-* **CategoryID**
+* **ID**
   * Type - int64
   * Value - "Uniquely generated key that represents a particular category"
   * Unique - True
-* **CategoryName**
+* **Name**
   * **Type** - str
   * **Value** - "Name of a particular category I.E. - Harvest, Boss Kill, Mirror Service, ETC..."
   * **Unique** - False
@@ -380,15 +380,15 @@ A table that holds all categories
 
 The services table will hold relevant information regarding a service's category, name and ID.
 
+- **ID**
+  - **Type** - int64
+  - **Value** - "Uniquely generated key for a particular type of service I.E. Harvest craft add fire remove fire"
+  - **Unique** - True
 - **CategoryID**
   - **Type** - int64
   - **Value** - "Uniquely generated key that represents a particular category from the category table I.E. Harvest Craft/Boss Kill/Mirror Service/ETC"
   - **Unique** - True
-- **ServiceID**
-  - **Type** - int64
-  - **Value** - "Uniquely generated key for a particular type of service I.E. Harvest craft add fire remove fire"
-  - **Unique** - True
-- **ServiceName**
+- **Name**
   - **Type** - str
   - **Value** - "A name of a particular service I.E. Add/Remove Fire does not need to indicate category"
   - **Unique** - False
@@ -399,7 +399,7 @@ The services table will hold relevant information regarding a service's category
 
 Schema for the trade table looks like the following,
 
-- **TradeID**
+- **ID**
   - **Type** - int64
   - **Value** - "Uniquely generated trade key for every trade posting"
   - **Unique** - True
