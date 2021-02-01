@@ -313,15 +313,15 @@ The users DB will hold a list of PoE ID's, SessionIDs, Status and Vouch/Reports 
 
 A table that holds all vouches
 
-* **VouchID**
+* **ID**
   * **Type** - int64
   * **Value** - "A uniquely generated ID for each vouch"
   * **Unique** - Yes
-* **BuyerUserID**
+* **BuyerID**
   * **Type** - int64
   * **Value** - "The value of the buyer that this vouch was made by"
   * **Unique** - Yes
-* **SellerUserID**
+* **SellerID**
   * **Type** - int64
   * **Value** - "The value of the seller that this vouch was made for"
   * **Unique** - Yes
@@ -329,7 +329,7 @@ A table that holds all vouches
   * **Type** - int64
   * **Value** - "The ID that this trade was made for"
   * **Unique** - Yes
-* **VouchMessage**
+* **Message**
   * **Type** - string
   * **Value** - "The message that was added to this vouch by the vouching user"
   * **Unique** - No
