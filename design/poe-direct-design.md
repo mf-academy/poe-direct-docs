@@ -103,6 +103,13 @@ These are the type definitions for GraphQL and represent the concrete types of d
   * **Type** - int64
 * **Message**
   * **Type** - string
+  
+  
+##### League
+
+* **ID**
+  * **Type** - int64
+  * **Name** - int64
 
 
 
@@ -112,6 +119,17 @@ This is a list of queries for the GraphQL API, queries are GET type operations t
 
 
 
+* **GetLeague**
+  * **Input**
+    * **ID**
+      * **Type** - int64
+  * **Return**
+    * **Type** - League
+* **GetLeagues**
+  * **Input**
+     * nil
+  * **Return**
+    * **Type** - Array League
 * **GetCategory**
   * **Input**
     * **CategoryID**
@@ -222,6 +240,14 @@ Mutations are PUT operations that let us mutate or create data in our database t
       * Type - String
   * **Return**
     * **Type** - Report
+* **PutLeague**
+  * **Input**
+    * **ID**
+      * Type - int64
+    * **Name**
+      * Type - String
+  * **Return**
+    * **Type** - League
 
 
 
@@ -429,9 +455,18 @@ Schema for the trade table looks like the following,
   - **Unique** - False
 
 
+#### **Leagues Table**
 
+Schema for the league table looks like the following,
 
-
+- **ID**
+  - **Type** - string
+  - **Value** - "Uniquely generated trade key for every league"
+  - **Unique** - True
+- **Name**
+  - **Type** - string
+  - **Value** - "Name for each league"
+  - **Unique** - True
 
 
 
